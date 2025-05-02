@@ -1,0 +1,254 @@
+<div class="dashboard-container">
+  <!-- Left Sidebar -->
+  <aside class="sidebar dark [&.dark]:bg-coal-600 "  id="sidebar" [class.collapsed]="sidebarCollapsed">
+
+    <!-- [class.collapsed]="true" -->
+    <div class="sidebar-header hidden lg:flex items-center relative justify-between px-3 lg:px-6 shrink-0" id="sidebar_header">
+
+      <a class="hidden dark:block" href="/metronic/tailwind/demo1/">
+       <img class="default-logo min-h-[22px] max-w-none" style="height: 100px;width: 230px;" src="../assets/img/logo2.png">
+      </a>
+
+     </div>
+    <div class="sidebar-content flex grow shrink-0 py-5 pe-2" id="sidebar_content">
+      <div class="scrollable-y-hover grow shrink-0 flex ps-2 lg:ps-5 pe-1 lg:pe-3" data-scrollable="true" data-scrollable-dependencies="#sidebar_header" data-scrollable-height="auto" data-scrollable-offset="0px" data-scrollable-wrappers="#sidebar_content" id="sidebar_scrollable">
+       <!-- Sidebar Menu -->
+       <div class="menu flex flex-col grow gap-0.5" data-menu="true" data-menu-accordion-expand-all="false" id="sidebar_menu">
+        <div class="menu-item here show" data-menu-item-toggle="accordion" data-menu-item-trigger="click">
+         <div class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]">
+          <span class="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]">
+           <i class="ki-filled ki-element-11 text-lg fn18">
+           </i>
+          </span>
+          <span class="menu-title text-sm font-medium fn18 text-gray-800 menu-item-active:text-primary menu-link-hover:!text-primary"
+          [routerLink]="'create-store'">
+           Dashboards
+          </span>
+          <span class="menu-arrow text-gray-400 w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+
+          </span>
+         </div>
+
+        </div>
+
+        <div class="menu-item" data-menu-item-toggle="accordion" data-menu-item-trigger="click">
+         <div class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]">
+          <span class="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]">
+           <i class="ki-filled ki-purchase text-lg fn18">
+           </i>
+          </span>
+          <span class="menu-title text-sm font-medium fn18 text-gray-800 menu-item-active:text-primary menu-link-hover:!text-primary"
+          [routerLink]="'plans'">
+           Order Now
+          </span>
+          <span class="menu-arrow text-gray-400 w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+
+          </span>
+         </div>
+
+        </div>
+        <div class="menu-item" data-menu-item-toggle="accordion" data-menu-item-trigger="click">
+         <div class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]">
+          <span class="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]">
+           <i class="ki-filled ki-wallet text-lg fn18">
+           </i>
+          </span>
+          <span class="menu-title text-sm font-medium fn18 text-gray-800 menu-item-active:text-primary menu-link-hover:!text-primary"
+          [routerLink]="'transactions'">
+           Transactions
+          </span>
+          <span class="menu-arrow text-gray-400 w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+
+          </span>
+         </div>
+
+        </div>
+        <div class="menu-item" data-menu-item-toggle="accordion" data-menu-item-trigger="click">
+         <div class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]">
+          <span class="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]">
+           <i class="ki-filled ki-wlan text-lg fn18">
+           </i>
+          </span>
+          <span class="menu-title text-sm font-medium fn18 text-gray-800 menu-item-active:text-primary menu-link-hover:!text-primary">
+           Server Status
+          </span>
+          <span class="menu-arrow text-gray-400 w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+
+          </span>
+         </div>
+
+        </div>
+
+
+        <div class="menu-item" data-menu-item-toggle="accordion" data-menu-item-trigger="click">
+          <div class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]" >
+           <span class="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]">
+            <i class="ki-filled ki-scroll text-lg fn18">
+            </i>
+           </span>
+           <span class="menu-title text-sm font-medium fn18 text-gray-800 menu-item-active:text-primary menu-link-hover:!text-primary">
+            Support Ticket
+           </span>
+           <span class="menu-arrow text-gray-400 w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+            <i class="ki-filled ki-plus text-2xs menu-item-show:hidden">
+            </i>
+            <i class="ki-filled ki-minus text-2xs hidden menu-item-show:inline-flex">
+            </i>
+           </span>
+          </div>
+          <div class="menu-accordion gap-0.5 ps-[10px] relative before:absolute before:start-[20px] before:top-0 before:bottom-0 before:border-s before:border-gray-200">
+
+           <div class="menu-item">
+            <a class="menu-link border border-transparent items-center grow menu-item-active:bg-secondary-active dark:menu-item-active:bg-coal-300 dark:menu-item-active:border-gray-100 menu-item-active:rounded-lg hover:bg-secondary-active dark:hover:bg-coal-300 dark:hover:border-gray-100 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]" >
+             <span class="menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 menu-item-active:before:bg-primary menu-item-hover:before:bg-primary">
+             </span>
+             <span class="menu-title text-2sm font-normal text-gray-800 menu-item-active:text-primary menu-item-active:font-semibold menu-link-hover:!text-primary"
+             [routerLink]="'open-ticket'">
+              Open Ticket
+             </span>
+            </a>
+           </div>
+           <div class="menu-item">
+            <a class="menu-link border border-transparent items-center grow menu-item-active:bg-secondary-active dark:menu-item-active:bg-coal-300 dark:menu-item-active:border-gray-100 menu-item-active:rounded-lg hover:bg-secondary-active dark:hover:bg-coal-300 dark:hover:border-gray-100 hover:rounded-lg gap-[14px] ps-[10px] pe-[10px] py-[8px]" >
+             <span class="menu-bullet flex w-[6px] -start-[3px] rtl:start-0 relative before:absolute before:top-0 before:size-[6px] before:rounded-full rtl:before:translate-x-1/2 before:-translate-y-1/2 menu-item-active:before:bg-primary menu-item-hover:before:bg-primary">
+             </span>
+             <span class="menu-title text-2sm font-normal text-gray-800 menu-item-active:text-primary menu-item-active:font-semibold menu-link-hover:!text-primary"
+             [routerLink]="'view-ticket'">
+              View Ticket
+             </span>
+            </a>
+           </div>
+
+
+          </div>
+         </div>
+
+        <div class="menu-item" data-menu-item-toggle="accordion" data-menu-item-trigger="click">
+         <div class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]">
+          <span class="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]">
+           <i class="ki-filled ki-shop text-lg fn18">
+           </i>
+          </span>
+          <span class="menu-title text-sm font-medium fn18 text-gray-800 menu-item-active:text-primary menu-link-hover:!text-primary">
+           Store Manage
+          </span>
+          <span class="menu-arrow text-gray-400 w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+
+          </span>
+         </div>
+
+        </div>
+        <div class="menu-item" data-menu-item-toggle="accordion" data-menu-item-trigger="click">
+          <div class="menu-link flex items-center grow cursor-pointer border border-transparent gap-[10px] ps-[10px] pe-[10px] py-[6px]">
+           <span class="menu-icon items-start text-gray-500 dark:text-gray-400 w-[20px]">
+            <i class="ki-filled ki-paper-plane text-lg fn18">
+            </i>
+           </span>
+           <span class="menu-title text-sm font-medium text-gray-800 fn18 menu-item-active:text-primary menu-link-hover:!text-primary">
+            Mail Manage
+           </span>
+           <span class="menu-arrow text-gray-400 w-[20px] shrink-0 justify-end ms-1 me-[-10px]">
+
+           </span>
+          </div>
+
+         </div>
+       </div>
+       <!-- End of Sidebar Menu -->
+      </div>
+     </div>
+
+  </aside>
+
+  <div class="content-wrapper">
+    <!-- Top Navigation Bar -->
+    <nav class="top-navbar">
+      <div class="navbar-content">
+        <div class="hamburger-menu"  (click)="toggleNavBar()">
+          <i class="ki-filled ki-element-equal" style="font-size: 22px;">
+          </i>
+        </div>
+
+        <div  style="display: flex; justify-content: end; margin-right: 2%;font-size: 22px;">
+          <div class="menu" data-menu="true">
+            <div class="menu-item menu-item-dropdown" data-menu-item-offset="20px, 10px" data-menu-item-offset-rtl="-20px, 10px" data-menu-item-placement="bottom-end" data-menu-item-placement-rtl="bottom-start" data-menu-item-toggle="dropdown" data-menu-item-trigger="click|lg:click">
+             <div class="menu-toggle btn btn-icon rounded-full">
+              <img alt="" class="size-9 rounded-full border-2 border-success shrink-0" src="/static/metronic/tailwind/dist/assets/media/avatars/300-2.png">
+
+             </div>
+             <div class="menu-dropdown menu-default light:border-gray-300 w-screen max-w-[250px]">
+              <div class="flex items-center justify-between px-5 py-1.5 gap-1.5">
+               <div class="flex items-center gap-2">
+                <img alt="" class="size-9 rounded-full border-2 border-success" src="/static/metronic/tailwind/dist/assets/media/avatars/300-2.png">
+                 <div class="flex flex-col gap-1.5">
+                  <span class="text-sm text-gray-800 font-semibold leading-none">
+                   Cody Fisher
+                  </span>
+                  <a class="text-xs text-gray-600 hover:text-primary font-medium leading-none" href="/metronic/tailwind/demo1/account/home/get-started">
+                   c.fisher@gmail.com
+                  </a>
+                 </div>
+
+               </div>
+               <span class="badge badge-xs badge-primary badge-outline">
+                Pro
+               </span>
+              </div>
+              <div class="menu-separator">
+              </div>
+              <div class="flex flex-col">
+
+               <div class="menu-item">
+                <a class="menu-link" href="/metronic/tailwind/demo1/account/home/user-profile">
+                 <span class="menu-icon">
+                  <i class="ki-filled ki-profile-circle">
+                  </i>
+                 </span>
+                 <span class="menu-title">
+                  My Profile
+                 </span>
+                </a>
+               </div>
+               <div class="menu-item menu-item-dropdown" data-menu-item-offset="-50px, 0" data-menu-item-placement="left-start" data-menu-item-placement-rtl="right-start" data-menu-item-toggle="dropdown" data-menu-item-trigger="click|lg:hover">
+                <div class="menu-link">
+                 <span class="menu-icon">
+                  <i class="ki-filled ki-setting-2">
+                  </i>
+                 </span>
+                 <span class="menu-title">
+                  Settings
+                 </span>
+
+                </div>
+
+               </div>
+
+
+              </div>
+              <div class="menu-separator">
+              </div>
+              <div class="flex flex-col">
+
+               <div class="menu-item px-4 py-1.5">
+                <a class="btn btn-sm btn-light justify-center" href="/metronic/tailwind/demo1/authentication/classic/sign-in">
+                 Log out
+                </a>
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+        </div>
+
+
+
+
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>

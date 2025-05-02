@@ -1,0 +1,115 @@
+.section {
+  position: absolute;
+    bottom: 0;
+    background: #0A2540;
+    color: white;
+    padding: 100px 50px;
+    clip-path: polygon(0 70%, 100% 0, 100% 100%, 0% 100%);
+    width: 100%;
+    height: 40vh;
+    z-index: 1;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.tagline {
+  color: #00D4FF;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0 0 20px;
+}
+
+.cornerbutton{
+  position: absolute;
+    bottom: 18%;
+    right: 5%;
+}
+
+pre {
+  background: #001F3F;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-family: monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.blue-bars {
+  position: absolute;
+  top: -60px;
+  left: 50px;
+  z-index: 0;
+}
+
+.bar {
+  height: 40px;
+  width: 200px;
+  transform: skewX(-15deg);
+  margin-bottom: -10px;
+}
+
+.bar.light {
+  background: #6ee0ff;
+}
+
+.bar.dark {
+  background: #0047ff;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
+.checkout-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-control {
+  border-radius: 0.5rem;
+}
+
+.section-footer {
+  padding: 2rem;
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+}
+
+.badge-checkout {
+  background: #ece4ff;
+  color: #6f42c1;
+  font-weight: 500;
+}
+
+.card-icons img {
+  height: 20px;
+  margin-left: 0.5rem;
+}
+
+.btn-faded {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.btn-faded:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}

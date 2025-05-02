@@ -38,24 +38,23 @@ import { HttpClientModule } from '@angular/common/http';
     PrivateSlideComponent,
     TemplateOneComponent,
     FontStyleComponent,
-    ColorsComponent,
     MarginPaddingComponent,
     ImagComponent,
     LinkComponent,
     SectionComponent,
-    DivsComponent
+    DivsComponent,
+    ColorsComponent
   ],
   imports: [
-    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    DragDropModule,
     ScrollingModule,
-    DndModule
+    DndModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
