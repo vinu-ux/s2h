@@ -1,0 +1,30 @@
+
+<div
+style="width: 85vw; height: 85vh; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+<div style="text-align: center; width: 100%;" class="mb-2">
+  <h1 class="winky-sans" style="font-size: 50px;">Check Domain Availability</h1>
+  <div style="position: relative; width: 1200px; max-width: 90vw; margin: 0 auto; padding: 20px 0;">
+    <input type="text" placeholder="Search for a domain..." [formControl]="checkDomain" class="custom-input" >
+    <span class="input-icon">
+      <i class="ti ti-search"></i>
+    </span>
+  </div>
+</div>
+
+<div style="text-align: center; width: 100%;">
+  <h1 class="winky-sans" style="font-size: 50px;">Do you already have a domain?</h1>
+  <div style="position: relative; width: 1200px; max-width: 90vw; margin: 0 auto; padding: 20px 0;">
+    <input type="text" placeholder="Enter your existing domain..." [formControl]="existdomain" class="custom-input">
+    <span class="input-icon">
+      <i class="ti ti-world"></i>
+    </span>
+  </div>
+</div>
+
+<div class="p-3" style="display: flex; gap: 20px; justify-content: center; align-items: center;">
+  <button class="button-30" href="#carousel-controls" role="button" data-bs-slide="prev">Cancel</button>
+  <button class="button-29" href="#carousel-controls" role="button" data-bs-slide="next">Next</button>
+</div>
+
+</div>

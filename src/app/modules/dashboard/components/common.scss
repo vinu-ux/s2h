@@ -1,0 +1,196 @@
+
+
+.content {
+  max-width: 600px;
+}
+
+.tagline {
+  color: #00D4FF;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0 0 20px;
+}
+
+.cornerbutton{
+  position: absolute;
+    bottom: 18%;
+    right: 5%;
+}
+.main-head{
+  font-weight: 650; 
+  font-size: 30px;
+  letter-spacing: 2px; 
+  line-height: 30px
+}
+
+.card-by-sty{
+  width: 500px;
+  height: fit-content;
+  right: 170px;
+  background: white !important;
+  backdrop-filter: blur(50px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+          .custom-input {
+            width: 100%;
+            padding: 15px 60px 15px 20px;
+            border-radius: 50px;
+            border: 2px solid #9a99a25c;
+            /* Nice violet border */
+            box-shadow: 0 4px 15px rgba(108, 99, 255, 0.2);
+            font-size: 18px;
+            outline: none;
+            background: #ffffff;
+            transition: all 0.3s ease;
+          }
+
+          .custom-input:focus {
+            border-color: #4e47d6;
+            /* Darker violet on focus */
+            box-shadow: 0 6px 20px rgba(78, 71, 214, 0.3);
+          }
+
+          .input-icon {
+            position: absolute;
+            right: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6c63ff;
+            font-size: 22px;
+            cursor: pointer;
+          }
+
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.checkout-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-control {
+  border-radius: 0.5rem;
+}
+
+.winky-sans {
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.button-29 {
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 100px;
+  background-color: #4C43CD;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
+}
+
+
+.button-30 {
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 100px;
+  background-color: #ff0000;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
+}
+
+
+.badge-checkout {
+  background: #ece4ff;
+  color: #6f42c1;
+  font-weight: 500;
+}
+
+.card-icons img {
+  height: 20px;
+  margin-left: 0.5rem;
+}
+
+.btn-faded {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.btn-faded:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+.overlay{
+  height: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+
+}
+
+.hgImg{
+  height: 400px;
+}
+
+
+
+
+
+
+.card:hover .overlay{
+  height: 100%;
+}

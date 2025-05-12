@@ -1,0 +1,74 @@
+<div class="row mb-3">
+  <h1 class="winky-sans">
+    Discover Your Perfect Templates
+  </h1>
+
+  <p class="winky-sans" class="text-secondary fs-3 lh-3">Browse our curated themes and pick the one that best
+    matches your style.</p>
+
+</div>
+
+
+
+<div class="row row-deck row-cards p-2 gap-4">
+  <div class="card col-md-4 col-xl-3 p-0 hgImg position-relative overflow-hidden">
+    <img src="../../assets/images/freepik__adjust__98892.png"
+         class="card-img-top w-100 h-100 object-fit-cover"
+          alt="">
+
+    <div class="overlay" (click)="rm1.click()">
+      <input type="radio" #rm1
+             class="form-imagecheck-input"
+             [value]="'1'"
+             [formControl]="template"
+             hidden>
+      <div class="card-title mb-1 text-white">Template 1</div>
+      <div class="text-secondary text-white">Default Template</div>
+      <a class="btn btn-6 btn-success btn-pill">Select</a>
+    </div>
+  </div>
+  <div class="card col-md-4 col-xl-3 p-0 hgImg position-relative overflow-hidden">
+    <img src="../../assets/images/freepik__adjust__98892.png"
+         class="card-img-top w-100 h-100 object-fit-cover"
+          alt="">
+
+    <div class="overlay" (click)="rm2.click()">
+      <input type="radio" #rm2
+             class="form-imagecheck-input"
+             [value]="'2'"
+             [formControl]="template"
+             hidden>
+      <div class="card-title mb-1 text-white">Template 2</div>
+      <div class="text-secondary text-white">Default Template</div>
+      <a class="btn btn-6 btn-success btn-pill">Select</a>
+
+    </div>
+  </div>
+  <div class="card col-md-4 col-xl-3 p-0 hgImg position-relative overflow-hidden">
+    <img src="../../assets/images/freepik__adjust__98892.png"
+         class="card-img-top w-100 h-100 object-fit-cover"
+          alt="">
+
+    <div class="overlay" (click)="rm3.click()">
+      <input type="radio" #rm3
+             class="form-imagecheck-input"
+             [value]="'3'"
+             [formControl]="template"
+             hidden>
+      <div class="card-title mb-1 text-white">Template 3</div>
+      <div class="text-secondary text-white">Default Template</div>
+      <a class="btn btn-6 btn-success btn-pill">Select</a>
+
+    </div>
+  </div>
+
+             
+
+
+
+
+  <div class="p-3" style="display: flex;justify-content: center; gap: 20px;width: 80%;">
+    <button class="button-30" href="#carousel-controls" role="button" data-bs-slide="prev">Cancel</button>
+    <button class="button-29" href="#carousel-controls" role="button" data-bs-slide="next">Next</button>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+<form [formGroup]="bussinessDetailForm">
+<div class="d-flex justify-between align-items-center" style="width: 85vw;height: 85vh;">
+  <div class="col-6">
+    <h1 class="winky-sans" style="font-size: 50px;">Tell us about your bussiness</h1>
+    <h1 class="winky-sans" style="font-size: 30px;
+line-height: 40px;">Help us understand your business better by providing details about what you plan to sell, your
+      target audience, and the overall scale of your operations. This information is crucial for setting up your
+      online store effectively.</h1>
+    <div class="p-3">
+      <button class="button-30 me-2" href="#carousel-controls" role="button"
+        data-bs-slide="prev">Cancel</button>
+
+
+      <button class="button-29" href="#carousel-controls" role="button" data-bs-slide="next">Next</button>
+    </div>
+
+  </div>
+  <div class="checkout-card p-4 position-relative text-center card-by-sty" >
+    <div class="card-header" id="tell-us">
+      <h3 class="card-title main-head"style="font-size: 25px">
+        Tell us about your bussiness
+      </h3>
+    </div>
+    <div class="card-body gap-5 lg:py-7.5">
+      <div class="m-3 gap-2.5">
+        <label class="form-label fs-4">
+          What are you planning to sell on the website
+        </label>
+           <mat-form-field class="example-full-width w-100" appearance="outline">
+        <mat-label>Select Catagorie</mat-label>
+        <input
+          type="text"
+          matInput
+          formControlName="sellPlannin"
+          [matAutocomplete]="autosellPan"
+          placeholder="Search Manufacture"
+        />
+
+        <mat-autocomplete
+          [displayWith]="displayManufactureFn"
+          #autosellPan="matAutocomplete"
+        >
+          <mat-option
+            *ngFor="let item of sellPlans"
+            [value]="item"
+          >
+            {{ item }}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+       
+      </div>
+      <div class="m-3 gap-2.5">
+        <label class="form-label fs-4">
+          Do you have any experiense
+        </label>
+           <mat-form-field class="dropdown1 w-full" appearance="outline">
+                        <mat-label>Experience</mat-label>
+                        <mat-select formControlName="experience"
+                        >
+                          <mat-option>
+                            Yes
+                          </mat-option>
+                          <mat-option >
+                            No
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+      </div>
+      <div class="m-3 2.5 mb-2">
+        <label class="form-label fs-4">
+          Total count of product you sell
+        </label>
+        <mat-form-field class="dropdown1 w-full" appearance="outline">
+                        <mat-label>Count</mat-label>
+                        <mat-select formControlName="totalCount"
+                        >
+                          <mat-option>
+                            1-10
+                          </mat-option>
+                          <mat-option >
+                            10-100
+                          </mat-option>
+                          <mat-option >
+                            100 above
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
+</form>
